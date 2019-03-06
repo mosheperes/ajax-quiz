@@ -2,6 +2,13 @@
 $(document).ready(
     //The function that does the stuff.
     function () {
+        $('#search').append('<input>');
+        $('#button').append('<button>');
+        $('#button').bind('click', function () {};
+
+        // document.getElementById("#button").addEventListener("click",);
+        })
+
         //Make the AJAX call
         $.ajax('http://api.tvmaze.com/singlesearch/shows?q=the+magicians&embed=episodes', {
             method: "GET",
